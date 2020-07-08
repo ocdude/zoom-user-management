@@ -109,4 +109,4 @@ if __name__ == "__main__":
 
 	db = create_user_database(config['Paths'].get('database'))
 	parse_user_export(db, args.zoom_export)
-	create_user_update_file(db, 'out.csv','2019')
+	create_user_update_file(db, 'out.csv', config['Data'].get('year'))
